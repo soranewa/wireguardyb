@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "=== INSTALL WIREGUARD + WG-UI (PLAINTEXT FIX) ==="
+echo "=== INSTALL WIREGUARD + WIREGUARD UI GHOSTERX DIGITAL ==="
 
 # Root check
 if [ "$EUID" -ne 0 ]; then 
@@ -78,7 +78,7 @@ mkdir -p /opt/wireguard-ui
 mkdir -p /etc/wireguard
 mkdir -p /etc/fail2ban
 
-# ==================== DB HANDLING (PLAINTEXT - FIX WG-UI BUG) ====================
+# ==================== DB HANDLING GHOST ====================
 if [ "$PRESERVE_DB" = false ] || [ ! -d /opt/wireguard-ui/db ]; then
     rm -rf /opt/wireguard-ui/db
     mkdir -p /opt/wireguard-ui/db/users
