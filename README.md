@@ -62,8 +62,6 @@ iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE 2>/dev/null; iptables -D FO
 
 ### ⚠️ Catatan Penting
 
-* WAJIB 1 baris (jangan enter)
-* Jangan tambahkan teks lain (contoh: `bash`)
 * Ganti `eth0` jika interface berbeda
 
 Cek interface:
