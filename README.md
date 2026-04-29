@@ -1,4 +1,4 @@
-# WireGuard + WG-UI Production Installer
+# WireGuard + Wireguard UI Installer
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![ShellCheck](https://img.shields.io/badge/ShellCheck-passed-brightgreen.svg)](https://www.shellcheck.net/)
@@ -10,10 +10,9 @@ Script instalasi otomatis untuk **WireGuard VPN Server** dengan **Web UI** (Wire
 ## ✨ Fitur
 
 * Instalasi WireGuard + WireGuard-UI
-* Fix database plaintext
-* Auto-reload tanpa disconnect
-* Firewall secure
-* Fail2ban opsional
+* Auto Reload Tanpa Disconnect
+* Firewall Secure Opsional
+* Fail2ban Opsional
 
 ---
 
@@ -30,7 +29,7 @@ sudo ./WireguardYB.sh
 ## 🔐 Akses Web UI
 
 ```bash id="w2k19x"
-ssh -L 5000:127.0.0.1:5000 root@IP
+ssh -L 5000:127.0.0.1:5000 root@IP-Server-Anda
 ```
 
 Buka di browser:
@@ -191,7 +190,7 @@ Disimpan di:
 ## ⚠️ Catatan
 
 * Ganti password setelah login
-* MTU default: 1420 (turunkan ke 1400 jika perlu)
+* MTU default: 1480 (turunkan ke 1280 jika perlu)
 
 ---
 
